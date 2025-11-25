@@ -1,0 +1,23 @@
+#popup{
+    background-color: aqua;
+    border-radius: 8px;
+    border-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: mostrar 0.25s ease-out;
+}
+
+#popupNo{
+    background-color: aqua;
+    border-radius: 8px;
+    border-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: mostrar 0.25s ease-out;
+}
+
+
+
+@keyframes mostrar{
+    from{
+        transform: translateY(-200px);
+    }
+}
