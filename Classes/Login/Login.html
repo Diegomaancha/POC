@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManchaGym</title>
+    <link rel="stylesheet" href="/Classes/Login/Login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div id="pregunta">
+            <h2>¿Estás preparado para tu cambio físico?</h2>
+
+            <div class="buttons">
+                <button id="btn-si">SÍ</button>
+                <button id="btn-no">NO</button>
+            </div>
+        </div>
+
+        <div id="nombre-section" class="hidden">
+            <h3>Perfecto, escribe tu nombre:</h3>
+            <input type="text" id="nombre" placeholder="Tu nombre...">
+            <button id="btn-entrar">Entrar</button>
+        </div>
+
+    </div>
+
+    <!-- POPUP PERSONALIZADO -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-box">
+            <p id="popup-msg"></p>
+        </div>
+    </div>
+
+    <script src="/Classes/Login/Login.js"></script>
+</body>
+
+</html>
