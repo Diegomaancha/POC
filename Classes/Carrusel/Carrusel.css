@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+/* ===============================
+   CONTENEDOR DEL CARRUSEL
+   =============================== */
+.carrusel {
+    width: 100%;
+    max-width: 1280px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+/* Lista que contiene las imágenes */
+.carrusel ul {
+    display: flex;
+    width: 300%; /* 3 imágenes */
+    animation: slide 15s infinite ease-in-out;
+}
+
+/* ===============================
+   CADA SLIDE
+   =============================== */
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+/* Overlay oscuro para mejorar el texto */
+.carrusel li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* intensidad del oscurecido */
+    z-index: 1;
+}
+
+/* ===============================
+   IMÁGENES (MISMO TAMAÑO SIEMPRE)
+   =============================== */
+.carrusel img {
+    width: 100%;
+    height: 450px;      /* Ajusta la altura si quieres */
+    object-fit: cover;  /* Ajusta la imagen sin deformación */
+}
+
+/* ===============================
+   TEXTO SOBRE LA IMAGEN
+   =============================== */
+.textocarrusel {
+    position: absolute;
+    text-align: center;
+    padding: 0 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    z-index: 2; /* por encima del overlay */
+}
+
+.textocarrusel h2 {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   ANIMACIÓN DEL CARRUSEL
+   =============================== */
+@keyframes slide {
+    0% { margin-left: 0%; }
+    33% { margin-left: 0%; }
+
+    34% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+
+    67% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media(max-width: 991px) {
+
+    .carrusel img {
+        height: 260px;
+    }
+
+    .textocarrusel {
+        padding: 0 15px;
+        font-size: 22px;
+    }
+
+    .textocarrusel h2 {
+        font-size: 38px;
+    }
+
+    .textocarrusel p {
+        font-size: 16px;
+    }
+}

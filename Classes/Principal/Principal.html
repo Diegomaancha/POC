@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ManchaGym</title>
     <link rel="stylesheet" type="text/css" href="/Classes/Principal/Principal.css">
+    <link rel="stylesheet" href="/Classes/Footer/Footer.css">
+
+
 
 </head>
 
@@ -29,8 +32,33 @@
 
     </nav>
 
-    <script src="/Classes/Principal/Principal.js"></script>
 
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide active">
+                <img src="/Assets/Images/Carrusel_1.jpg" alt="">
+                <p class="texto">Primera imagen del carrusel</p>
+            </div>
+
+            <div class="slide">
+                <img src="/Assets/Images/Carrusel_4.png" alt="">
+                <p class="texto">Segunda imagen del carrusel</p>
+            </div>
+
+            <div class="slide">
+                <img src="/Assets/Images/Carrusel_3.png" alt="">
+                <p class="texto">Tercera imagen del carrusel</p>
+            </div>
+        </div>
+
+        <!-- Flechas -->
+        <button class="flecha izq">&#10094;</button>
+        <button class="flecha der">&#10095;</button>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="/Classes/Footer/Footer.js"></script>
+    <script src="/Classes/Principal/Principal.js"></script>
 </body>
 
 </html>

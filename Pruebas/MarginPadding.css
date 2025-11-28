@@ -1,0 +1,14 @@
+
+.caja-1 {
+    background-color: red;
+    color: white;
+    padding: 20px; /* espacio interno */
+    margin: 20px;  /* espacio externo */
+}
+
+.caja-2 {
+    background-color: blue;
+    color: white;
+    padding: 40px; /* más espacio interno */
+    margin: 10px;  /* menos espacio externo */
+}
