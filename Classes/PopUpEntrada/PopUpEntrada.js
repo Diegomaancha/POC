@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Si el nombre es válido
     localStorage.setItem("nombreUsuario", nombre);
-    window.location.href = "/Classes/Principal/Principal.html";
+    window.location.href = "/Classes/Carrusel/Carrusell.html";
 });
 
 

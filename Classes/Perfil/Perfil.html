@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Classes/Perfil/Perfil.css">
+    <link rel="stylesheet" href="/Classes/Footer/Footer.css">
+    <title>Perfil | ManchaGym</title>
 </head>
+
 <body>
-    <h1>Perfil</h1>
+
+    <!-- NAVBAR MISMO ESTILO -->
+    <nav class="navbar">
+        <div class="nav-logo"><a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a></div>
+
+        <ul class="nav-links">
+            <li><a href="/Classes/Carrusel/Carrusell.html">Inicio</a></li>
+            <li><a href="#">Rutinas</a></li>
+            <li><a href="/Classes/Perfil/Perfil.html">Perfil</a></li>
+            <li><a href="#">Suplementación</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="perfil-title">Tu Perfil</h2>
+
+    <!-- CONTENIDO DEL PERFIL -->
+    <section class="perfil-container">
+
+        <div class="perfil-card">
+
+            <!-- Nombre del usuario en la tarjeta -->
+            <div class="user-box">
+                Usuario: <span id="nombreUsuarioBox"></span>
+            </div>
+
+            <h3>Calcula tu peso recomendado</h3>
+
+            <label>Edad:</label>
+            <input type="number" id="edad" placeholder="Ej: 21">
+
+            <label>Altura (cm):</label>
+            <input type="number" id="altura" placeholder="Ej: 175">
+
+            <label for="tipoEntreno">Tipo de entrenamiento:</label>
+            <select id="tipoEntreno">
+                <option value="cardio">Mucho cardio</option>
+                <option value="pesas">Solo pesas</option>
+                <option value="hibrido">Híbrido</option>
+            </select>
+
+            <button id="calcularBtn">Calcular peso ideal</button>
+
+            <h3 id="resultado"></h3>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+    <script src="/Classes/Footer/Footer.js"></script>
+    <script src="/Classes/Perfil/Perfil.js"></script>
+
 </body>
+
 </html>

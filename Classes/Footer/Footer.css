@@ -21,7 +21,7 @@
 }
 
 .icono {
-    color: white;
+    color: black;
     font-size: 32px;
     margin: 0 10px;
     display: inline-block;
@@ -44,7 +44,7 @@
 }
 
 .menu_icon {
-    color: white;
+    color: black;
     font-size: 20px;
     text-decoration: none;
     margin: 5px 10px;
@@ -57,7 +57,7 @@
 }
 
 .texto {
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 15px;
     font-size: 15px;

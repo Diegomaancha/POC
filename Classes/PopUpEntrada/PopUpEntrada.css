@@ -55,7 +55,7 @@ body {
 
 #popup .botonsi:hover,
 #popup .botonno:hover {
-    background-color: aquamarine;
+    background-color: aqua;
 }
 
 #popupSi .botoncontinuar {
@@ -68,7 +68,7 @@ body {
 }
 
 #popupSi .botoncontinuar:hover {
-    background-color: aquamarine;
+    background-color: aqua;
 }
 
 

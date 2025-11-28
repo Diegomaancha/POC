@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Classes/Carrusel/Carrusel.css">
     <link rel="stylesheet" href="/Classes/Footer/Footer.css">
-
-    <title>Document</title>
+    <title>ManchaGym</title>
 </head>
 
 <body>
 
-    <h2 class="titulo">Carrusel automatico</h2>
+    <!-- POPUP PERSONALIZADO -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-box">
+            <p id="popup-msg"></p>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR PROFESIONAL -->
+    <nav class="navbar">
+        <div class="nav-logo" ><a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a></div>
+        <ul class="nav-links">
+            <li><a href="/Classes/Carrusel/Carrusell.html">Inicio</a></li>
+            <li><a href="/Classes/Rutina/Rutina.html">Rutinas</a></li>
+            <li><a href="/Classes/Perfil/Perfil.html">Perfil</a></li>
+            <li><a href="#">Suplementación</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="titulo">El cambio es hoy</h2>
+
+    <!-- CARRUSEL -->
     <div class="carrusel">
         <ul>
             <li>
                 <img src="/Assets/Images/Carrusel_1.jpg" alt="">
                 <div class="textocarrusel">
                     <h2>RUTINA</h2>
-                    <p>Consulta rutinas semanales y descubre ejercicios nuevos para
-                        incrementar esas ganancias</p>
+                    <p>Consulta rutinas semanales y descubre ejercicios nuevos para incrementar esas ganancias</p>
                 </div>
             </li>
             <li>
@@ -34,15 +53,33 @@
                 <img src="/Assets/Images/Carrusel_3.jpg" alt="">
                 <div class="textocarrusel">
                     <h2>Suplementación</h2>
-                    <p>Consulta la suplementacion adecuada según tus diferentes objetivos</p>
+                    <p>Consulta la suplementación adecuada según tus diferentes objetivos</p>
                 </div>
             </li>
         </ul>
     </div>
-    <br>
 
+    <!-- SECCIÓN ENTRE CARRUSEL Y FOOTER -->
+    <section class="info-section">
+        <div class="info-text">
+            <h2>Mejora cada día</h2>
+            <p>
+                En ManchaGym te ofrecemos herramientas, rutinas y consejos para que puedas alcanzar tus objetivos.
+                Nuestra plataforma está pensada para motivarte a entrenar, mejorar tu alimentación y mantener un
+                progreso real.
+            </p>
+        </div>
+
+        <div class="info-img">
+            <img src="/Assets/Images/ManchaGymlogo.png" alt="Entrenamiento">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <div id="footer-container"></div>
     <script src="/Classes/Footer/Footer.js"></script>
+    <script src="/Classes/Carrusel/Carrusel.js"></script>
+
 
 </body>
 

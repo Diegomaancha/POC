@@ -1,0 +1,42 @@
+{
+    "pecho": [
+        {
+            "nombre": "Press de banca",
+            "imagen": "https://images.pexels.com/photos/3838835/pexels-photo-3838835.jpeg",
+            "descripcion": "Ejercicio básico para trabajar la parte media del pectoral."
+        },
+        {
+            "nombre": "Aperturas con mancuernas",
+            "imagen": "https://images.pexels.com/photos/1552246/pexels-photo-1552246.jpeg",
+            "descripcion": "Estira y trabaja el pectoral mayor con amplitud."
+        }
+    ],
+    "espalda": [
+        {
+            "nombre": "Dominadas",
+            "imagen": "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg",
+            "descripcion": "Ejercicio clave para fuerza y anchura de espalda."
+        }
+    ],
+    "pierna": [
+        {
+            "nombre": "Sentadilla",
+            "imagen": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg",
+            "descripcion": "El mejor ejercicio para cuádriceps y glúteos."
+        }
+    ],
+    "hombro": [
+        {
+            "nombre": "Press militar",
+            "imagen": "https://images.pexels.com/photos/4162495/pexels-photo-4162495.jpeg",
+            "descripcion": "Fortalece deltoides y mejora la postura."
+        }
+    ],
+    "brazo": [
+        {
+            "nombre": "Curl de bíceps",
+            "imagen": "https://images.pexels.com/photos/3838827/pexels-photo-3838827.jpeg",
+            "descripcion": "Clásico para construir masa en los bíceps."
+        }
+    ]
+}

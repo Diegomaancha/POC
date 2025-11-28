@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: relative;
+}
+
+.ManchaGym{
+    color: white;
+    text-decoration: none;
+}
+
+.ManchaGym:hover {
+    color: aqua;
+
+}
+
+.nav-logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+.ej-title {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.ejercicios-container {
+    max-width: 1300px;
+    margin: 50px auto 150px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.ej-card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.ej-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.ej-card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 25px;
+}
+
+.ej-card p {
+    padding: 0 15px 20px 15px;
+    font-size: 17px;
+    line-height: 1.4;
+}
