@@ -151,3 +151,21 @@ button:hover {
         font-size: 34px;
     }
 }
+/* ===============================
+   RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
+   =============================== */
+@media(max-width: 991px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+

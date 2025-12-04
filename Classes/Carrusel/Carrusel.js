@@ -1,11 +1,13 @@
-// CAPTURA DEL POPUP IGUAL QUE EN PRINCIPAL
+// POPUP
 const popup = document.getElementById("popup");
 const msg = document.getElementById("popup-msg");
 
-// NOMBRE DEL LOCALSTORAGE
+// Nombre guardado
 const nombreUsuario = localStorage.getItem("nombreUsuario");
 
-// FUNCIÓN POPUP EXACTA A LA DEL PRINCIPAL
+// Comprobar si el popup ya se mostró una vez
+const bienvenidaMostrada = localStorage.getItem("bienvenidaMostrada");
+
 function mostrarPopup(mensaje) {
     msg.innerText = mensaje;
     popup.classList.remove("hidden");
@@ -15,8 +17,10 @@ function mostrarPopup(mensaje) {
     }, 3500);
 }
 
-// SI EXISTE NOMBRE, MOSTRAR POPUP
-if (nombreUsuario) {
+// Mostrar SOLO la primera vez
+if (nombreUsuario && !bienvenidaMostrada) {
     mostrarPopup(`Bienvenido ${nombreUsuario}, es hora de ponernos fuertes 💪`);
-}
 
+    // Guardar que ya se mostró
+    localStorage.setItem("bienvenidaMostrada", "true");
+}

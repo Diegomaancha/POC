@@ -2,7 +2,7 @@
 
 .footer {
     width: 100%;
-    background-color: aqua;
+    background-color: black;
     padding: 20px 5px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .icono {
-    color: black;
+    color: aqua;
     font-size: 32px;
     margin: 0 10px;
     display: inline-block;
@@ -44,7 +44,7 @@
 }
 
 .menu_icon {
-    color: black;
+    color: aqua;
     font-size: 20px;
     text-decoration: none;
     margin: 5px 10px;
@@ -57,7 +57,7 @@
 }
 
 .texto {
-    color: black;
+    color: aqua;
     text-align: center;
     margin-top: 15px;
     font-size: 15px;

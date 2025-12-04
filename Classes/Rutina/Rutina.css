@@ -20,7 +20,9 @@ body {
     /* La imagen queda fija al hacer scroll */
 }
 
-/* NAVBAR COMO SIEMPRE */
+/* ===============================
+   NAVBAR PROFESIONAL
+   =============================== */
 .navbar {
     width: 100%;
     background: #000;
@@ -29,22 +31,21 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    position: relative;
 }
 
-.ManchaGym{
+.ManchaGym {
     color: white;
     text-decoration: none;
 }
 
 .ManchaGym:hover {
     color: aqua;
-
 }
 
 .nav-logo {
     font-size: 28px;
     font-weight: bold;
-    
 }
 
 .nav-links {
@@ -57,11 +58,13 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .nav-links a:hover {
     color: aqua;
 }
+
 
 /* TÍTULO */
 .rutinas-title {
@@ -119,3 +122,21 @@ body {
         height: 150px;
     }
 }
+/* ===============================
+   RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
+   =============================== */
+@media(max-width: 991px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+

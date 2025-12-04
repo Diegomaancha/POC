@@ -9,6 +9,9 @@ body {
     color: white;
 }
 
+/* ===============================
+   NAVBAR PROFESIONAL
+   =============================== */
 .navbar {
     width: 100%;
     background: #000;
@@ -20,7 +23,7 @@ body {
     position: relative;
 }
 
-.ManchaGym{
+.ManchaGym {
     color: white;
     text-decoration: none;
 }
@@ -52,13 +55,15 @@ body {
     color: aqua;
 }
 
-.ej-title {
+/* Título */
+.sup-title {
     text-align: center;
     font-size: 45px;
     margin-top: 40px;
 }
 
-.ejercicios-container {
+/* Contenedor */
+.suplementos-container {
     max-width: 1300px;
     margin: 50px auto 150px auto;
     display: grid;
@@ -67,32 +72,47 @@ body {
     padding: 0 40px;
 }
 
-.ej-card {
+/* Cards */
+.sup-card {
     background: #1c1c1c;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 20px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-.ej-card img {
+.sup-card:hover {
+    transform: scale(1.05);
+
+}
+
+/* IMÁGENES COMPLETAS SIN RECORTES */
+.sup-card img {
     width: 100%;
-    height: 180px;
-    object-fit: contain; /* ahora se ven enteras */
-    background-color: #000; /* para que no quede hueco feo alrededor */
+    height: 180px;      /* igual que Rutina */
+    object-fit: cover;  /* ocupa TODA la caja */
+    display: block;
 }
 
 
-.ej-card h3 {
-    margin: 15px 0 10px 0;
+.sup-card h3 {
+    margin: 15px 0 5px 0;
     font-size: 25px;
 }
 
-.ej-card p {
-    padding: 0 15px 20px 15px;
-    font-size: 17px;
+.sup-card span {
+    font-size: 14px;
+    color: aqua;
+}
+
+.sup-card p {
+    padding: 0 15px;
+    font-size: 16px;
+    margin-top: 10px;
     line-height: 1.4;
 }
+
 /* ===============================
    RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
    =============================== */
