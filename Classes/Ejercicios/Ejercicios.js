@@ -17,7 +17,7 @@ fetch("/Jsons/Ejercicios.json")
 
         ejercicios.forEach(ej => {
             contenedor.innerHTML += `
-                <div class="ej-card">
+                <div class="ej_card">
                     <img src="${ej.imagen}">
                     <h3>${ej.nombre}</h3>
                     <p>${ej.descripcion}</p>
@@ -25,3 +25,29 @@ fetch("/Jsons/Ejercicios.json")
             `;
         });
     });
+
+     // ===============================
+//     BOTÓN MODO OSCURO
+// ===============================
+
+const btnModo = document.getElementById("modoBtn");
+
+// Cargar modo guardado
+if (localStorage.getItem("modo") === "dark") {
+    document.body.classList.add("dark");
+    btnModo.textContent = "☀️";
+}
+
+btnModo.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("modo", "dark");
+        btnModo.textContent = "☀️";
+    } else {
+        localStorage.setItem("modo", "light");
+        btnModo.textContent = "🌙";
+    }
+});
+
+

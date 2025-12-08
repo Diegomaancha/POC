@@ -78,6 +78,21 @@
     color: aqua;
 }
 
+/* BOTÓN MODO OSCURO */
+.modo-toggle {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.modo-toggle:hover {
+    transform: scale(1.1);
+}
+
 
 /* ===============================
    TÍTULO PRINCIPAL
@@ -230,4 +245,29 @@
         width: 100%;
         height: 250px;
     }
+}
+
+
+/* ============================
+       MODO OSCURO GLOBAL
+============================ */
+body.dark {
+    background: #111 !important;
+    color: white !important;
+}
+
+body.dark .navbar {
+    background: #222 !important;
+}
+
+body.dark .rutinas_titulo {
+    color: white !important;
+}
+
+body.dark .rutina_card {
+    background: #222 !important;
+}
+
+body.dark .rutina_card h3 {
+    color: white !important;
 }

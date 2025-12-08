@@ -1,3 +1,27 @@
+// ===============================
+//  BOTÓN MODO OSCURO (ARREGLADO)
+// ===============================
+const btnModo = document.getElementById("modoBtn");
+
+if (localStorage.getItem("modo") === "dark") {
+    document.body.classList.add("dark");
+    if (btnModo) btnModo.textContent = "☀️";
+}
+
+if (btnModo) {
+    btnModo.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("modo", "dark");
+            btnModo.textContent = "☀️";
+        } else {
+            localStorage.setItem("modo", "light");
+            btnModo.textContent = "🌙";
+        }
+    });
+}
+
 // POPUP
 const popup = document.getElementById("popup");
 const msg = document.getElementById("popup-msg");
@@ -17,10 +41,4 @@ function mostrarPopup(mensaje) {
     }, 3500);
 }
 
-// Mostrar SOLO la primera vez
-if (nombreUsuario && !bienvenidaMostrada) {
-    mostrarPopup(`Bienvenido ${nombreUsuario}, es hora de ponernos fuertes 💪`);
 
-    // Guardar que ya se mostró
-    localStorage.setItem("bienvenidaMostrada", "true");
-}

@@ -5,8 +5,18 @@
 }
 
 body {
-    background: #111;
-    color: white;
+   /* Fondo con un degradado blanco semitransparente encima de la imagen */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('/Assets/Images/ManchaGymlogo.png');
+
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-size: cover;
+    /* La imagen cubre toda la pantalla */
+    background-attachment: fixed;
+    /* La imagen queda fija al hacer scroll */
 }
 
 .navbar {
@@ -30,35 +40,51 @@ body {
 
 }
 
-.nav-logo {
+.nav_logo {
     font-size: 28px;
     font-weight: bold;
 }
 
-.nav-links {
+.nav_links {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-.nav-links a {
+.nav_links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
     color: aqua;
 }
 
-.ej-title {
+/* BOTÓN MODO OSCURO */
+.modo-toggle {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.modo-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+.ej_titulo {
     text-align: center;
     font-size: 45px;
     margin-top: 40px;
 }
 
-.ejercicios-container {
+.ej_contenedor {
     max-width: 1300px;
     margin: 50px auto 150px auto;
     display: grid;
@@ -67,15 +93,15 @@ body {
     padding: 0 40px;
 }
 
-.ej-card {
-    background: #1c1c1c;
+.ej_card {
+    background: black;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-.ej-card img {
+.ej_card img {
     width: 100%;
     height: 180px;
     object-fit: contain; /* ahora se ven enteras */
@@ -83,15 +109,23 @@ body {
 }
 
 
-.ej-card h3 {
+.ej_card h3 {
     margin: 15px 0 10px 0;
     font-size: 25px;
 }
 
-.ej-card p {
+.ej_card p {
     padding: 0 15px 20px 15px;
     font-size: 17px;
     line-height: 1.4;
+}
+
+h3{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
 }
 /* ===============================
    RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
@@ -105,8 +139,33 @@ body {
         padding: 20px 0;
     }
 
-    .nav-links {
+    .nav_links {
         flex-direction: column;
         gap: 15px;
     }
 }
+
+/* ============================
+       MODO OSCURO GLOBAL
+============================ */
+body.dark {
+    background: #111 !important;
+    color: white !important;
+}
+
+body.dark .navbar {
+    background: #222 !important;
+}
+
+body.dark .rutinas_titulo {
+    color: white !important;
+}
+
+body.dark .rutina_card {
+    background: #222 !important;
+}
+
+body.dark .rutina_card h3 {
+    color: white !important;
+}
+

@@ -11,27 +11,28 @@
 
 <body>
 
-    <!-- NAVBAR MISMO ESTILO -->
+    <!-- NAVBAR PROFESIONAL -->
     <nav class="navbar">
-        <div class="nav-logo"><a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a></div>
-
-        <ul class="nav-links">
+        <div class="nav_logo"><a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a></div>
+        <ul class="nav_links">
             <li><a href="/Classes/Carrusel/Carrusell.html">Inicio</a></li>
             <li><a href="/Classes/Rutina/Rutina.html">Rutinas</a></li>
             <li><a href="/Classes/Perfil/Perfil.html">Perfil</a></li>
-            <li><a href="#">Suplementación</a></li>
+            <li><a href="/Classes/Suplementacion/Suplementacion.html">Suplementación</a></li>
+            <!-- BOTÓN MODO OSCURO -->
         </ul>
+        <button id="modoBtn" class="modo-toggle">🌙</button>
     </nav>
 
-    <h2 class="perfil-title">Tu Perfil</h2>
+    <h2 class="perfil_titulo">Tu Perfil</h2>
 
     <!-- CONTENIDO DEL PERFIL -->
-    <section class="perfil-container">
+    <section class="perfil_contenedor">
 
-        <div class="perfil-card">
+        <div class="perfil_card">
 
             <!-- Nombre del usuario en la tarjeta -->
-            <div class="user-box">
+            <div class="caja_usuario">
                 Usuario: <span id="nombreUsuarioBox"></span>
             </div>
 
@@ -43,8 +44,8 @@
             <label>Altura (cm):</label>
             <input type="number" id="altura" placeholder="Ej: 175">
 
-            <label for="tipoEntreno">Tipo de entrenamiento:</label>
-            <select id="tipoEntreno">
+            <label for="tipo_entreno">Tipo de entrenamiento:</label>
+            <select id="tipo_entreno">
                 <option value="cardio">Mucho cardio</option>
                 <option value="pesas">Solo pesas</option>
                 <option value="hibrido">Híbrido</option>

@@ -11,87 +11,120 @@ body {
         url('/Assets/Images/ManchaGymlogo.png');
 
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que se repita */
     background-size: cover;
-    /* La imagen cubre toda la pantalla */
     background-attachment: fixed;
-    /* La imagen queda fija al hacer scroll */
 }
 
 
-/* NAVBAR IGUAL QUE LA PRINCIPAL */
+/* ===============================
+   NAVBAR PROFESIONAL (IGUAL QUE RUTINA)
+================================ */
 .navbar {
     width: 100%;
     background: #000;
     color: white;
     display: flex;
     justify-content: space-between;
+    /* LOGO | LINKS | BOTÓN */
     align-items: center;
     padding: 15px 50px;
 }
 
-.ManchaGym{
+.ManchaGym {
     color: white;
     text-decoration: none;
 }
 
-
 .ManchaGym:hover {
     color: aqua;
-
 }
 
-.nav-logo {
+.nav_logo {
     font-size: 28px;
     font-weight: bold;
 }
 
-.nav-links {
+.nav_links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 35px;
+    /* Más separación como en Rutina */
 }
 
-.nav-links a {
+.nav_links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
     color: aqua;
 }
 
-/* TÍTULO */
-.perfil-title {
+
+
+/* BOTÓN MODO OSCURO */
+.modo-toggle {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.modo-toggle {
+    width: auto !important;
+    height: auto !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+
+.modo-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+/* ===============================
+            TÍTULO
+================================ */
+.perfil_titulo {
     text-align: center;
     font-size: 45px;
     margin-top: 40px;
     color: black;
 }
 
-/* CONTENEDOR */
-.perfil-container {
+
+/* ===============================
+           TARJETA PERFIL
+================================ */
+.perfil_contenedor {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 120px; /* separa la tarjeta del footer */
+    margin-bottom: 120px;
 }
 
-/* TARJETA */
-.perfil-card {
+.perfil_card {
     background: black;
     padding: 30px;
     width: 450px;
     border-radius: 12px;
     color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Usuario dentro de la tarjeta */
-.user-box {
+.caja_usuario {
     display: inline-block;
     padding: 12px;
     border-radius: 6px;
@@ -99,7 +132,7 @@ body {
     font-size: 18px;
 }
 
-.perfil-card h3 {
+.perfil_card h3 {
     text-align: center;
     font-size: 26px;
     margin-bottom: 20px;
@@ -109,7 +142,8 @@ label {
     font-size: 18px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px;
     margin: 8px 0 15px 0;
@@ -140,20 +174,10 @@ button:hover {
     font-size: 22px;
 }
 
-/* RESPONSIVE */
-@media(max-width: 600px) {
 
-    .perfil-card {
-        width: 90%;
-    }
-
-    .perfil-title {
-        font-size: 34px;
-    }
-}
 /* ===============================
-   RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
-   =============================== */
+       RESPONSIVE NAVBAR
+================================ */
 @media(max-width: 991px) {
 
     .navbar {
@@ -163,9 +187,43 @@ button:hover {
         padding: 20px 0;
     }
 
-    .nav-links {
+    .nav_links {
         flex-direction: column;
         gap: 15px;
     }
 }
 
+
+/* ===============================
+         MODO OSCURO GLOBAL
+================================ */
+body.dark {
+    background: #111 !important;
+    color: white !important;
+}
+
+body.dark .navbar {
+    background: #222 !important;
+}
+
+body.dark .perfil_card {
+    background: #222 !important;
+}
+
+body.dark .perfil_titulo {
+    color: white !important;
+}
+
+body.dark input,
+body.dark select {
+    background: #333;
+    color: white;
+}
+
+body.dark button {
+    background: #00bcbc;
+}
+
+body.dark a {
+    color: white !important;
+}

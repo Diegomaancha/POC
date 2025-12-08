@@ -4,51 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Classes/Rutina/Rutina.css">
-    <link rel="stylesheet" href="/Classes/Footer/Footer.css">
     <title>Rutinas | ManchaGym</title>
+    <link rel="stylesheet" href="Rutina.css">
+    <link rel="stylesheet" href="/Classes/Footer/Footer.css">
 </head>
 
 <body>
-<nav class="navbar">
-    <div class="nav-logo"><a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a></div>
-    <ul class="nav-links">
-        <li><a href="/Classes/Carrusel/Carrusell.html">Inicio</a></li>
-        <li><a href="/Classes/Rutina/Rutina.html">Rutinas</a></li>
-        <li><a href="/Classes/Perfil/Perfil.html">Perfil</a></li>
-        <li><a href="/Classes/Suplementacion/Suplementacion.html">Suplementación</a></li>
-    </ul>
-</nav>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav_logo">
+            <a class="ManchaGym" href="/Classes/Carrusel/Carrusell.html">ManchaGym</a>
+        </div>
+
+        <ul class="nav_links">
+            <li><a href="/Classes/Carrusel/Carrusell.html">Inicio</a></li>
+            <li><a href="/Classes/Rutina/Rutina.html">Rutinas</a></li>
+            <li><a href="/Classes/Perfil/Perfil.html">Perfil</a></li>
+            <li><a href="/Classes/Suplementacion/Suplementacion.html">Suplementación</a></li>
+        </ul>
+
+        <!-- BOTÓN MODO OSCURO -->
+        <button id="modoBtn" class="modo-toggle">🌙</button>
+    </nav>
 
 
-
-    <h2 class="rutinas-title">¿Qué vamos a entrenar hoy?</h2>
+    <h2 class="rutinas_titulo">¿Qué vamos a entrenar hoy?</h2>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <section class="rutinas-container">
+    <section class="rutinas_container">
 
-        <!-- Caja Pecho -->
-        <div class="rutina-card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=pecho'">
-            <img src="https://images.pexels.com/photos/3838835/pexels-photo-3838835.jpeg" alt="pecho">
+        <div class="rutina_card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=pecho'">
+            <img src="/Assets/Images/Pecho.jpg" alt="Pecho">
             <h3>Pecho</h3>
         </div>
 
-
-        <!-- Caja Espalda -->
-        <div class="rutina-card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=espalda'">
-            <img src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg" alt="Espalda">
+        <div class="rutina_card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=espalda'">
+            <img src="/Assets/Images/Espalda.jpeg" alt="Espalda">
             <h3>Espalda</h3>
         </div>
 
-        <!-- Caja Pierna -->
-        <div class="rutina-card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=pierna'">
-            <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Pierna">
+        <div class="rutina_card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=pierna'">
+            <img src="/Assets/Images/Pierna.jpeg" alt="Pierna">
             <h3>Pierna</h3>
         </div>
 
-        <!-- Caja Brazo -->
-        <div class="rutina-card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=brazo'">
-            <img src="https://images.pexels.com/photos/4162495/pexels-photo-4162495.jpeg" alt="Brazo">
+        <div class="rutina_card" onclick="location.href='/Classes/Ejercicios/Ejercicios.html?musculo=brazo'">
+            <img src="/Assets/Images/Brazo.jpeg" alt="Brazo">
             <h3>Brazo</h3>
         </div>
 
@@ -57,6 +59,7 @@
     <!-- FOOTER -->
     <div id="footer-container"></div>
     <script src="/Classes/Footer/Footer.js"></script>
+    <script src="Rutina.js"></script>
 
 </body>
 

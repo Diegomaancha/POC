@@ -5,8 +5,18 @@
 }
 
 body {
-    background: #111;
-    color: white;
+    /* Fondo con un degradado blanco semitransparente encima de la imagen */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('/Assets/Images/ManchaGymlogo.png');
+
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-size: cover;
+    /* La imagen cubre toda la pantalla */
+    background-attachment: fixed;
+    /* La imagen queda fija al hacer scroll */
 }
 
 /* ===============================
@@ -33,37 +43,52 @@ body {
 
 }
 
-.nav-logo {
+.nav_logo {
     font-size: 28px;
     font-weight: bold;
 }
 
-.nav-links {
+.nav_links {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-.nav-links a {
+.nav_links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
     color: aqua;
 }
 
+/* BOTÓN MODO OSCURO */
+.modo-toggle {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.modo-toggle:hover {
+    transform: scale(1.1);
+}
+
 /* Título */
-.sup-title {
+.sup_titulo {
     text-align: center;
     font-size: 45px;
     margin-top: 40px;
 }
 
 /* Contenedor */
-.suplementos-container {
+.sup_contenedor {
     max-width: 1300px;
     margin: 50px auto 150px auto;
     display: grid;
@@ -73,8 +98,8 @@ body {
 }
 
 /* Cards */
-.sup-card {
-    background: #1c1c1c;
+.sup_card {
+    background: black;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
@@ -82,35 +107,41 @@ body {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-.sup-card:hover {
+.sup_card:hover {
     transform: scale(1.05);
 
 }
 
 /* IMÁGENES COMPLETAS SIN RECORTES */
-.sup-card img {
+.sup_card img {
     width: 100%;
-    height: 180px;      /* igual que Rutina */
-    object-fit: cover;  /* ocupa TODA la caja */
+    height: 180px;
+    /* igual que Rutina */
+    object-fit: cover;
+    /* ocupa TODA la caja */
     display: block;
 }
 
 
-.sup-card h3 {
+.sup_card h3 {
     margin: 15px 0 5px 0;
     font-size: 25px;
 }
 
-.sup-card span {
+.sup_card span {
     font-size: 14px;
     color: aqua;
 }
 
-.sup-card p {
+.sup_card p {
     padding: 0 15px;
     font-size: 16px;
     margin-top: 10px;
     line-height: 1.4;
+}
+
+p {
+    color: aliceblue;
 }
 
 /* ===============================
@@ -125,8 +156,32 @@ body {
         padding: 20px 0;
     }
 
-    .nav-links {
+    .nav_links {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+/* ============================
+       MODO OSCURO GLOBAL
+============================ */
+body.dark {
+    background: #111 !important;
+    color: white !important;
+}
+
+body.dark .navbar {
+    background: #222 !important;
+}
+
+body.dark .rutinas_titulo {
+    color: white !important;
+}
+
+body.dark .rutina_card {
+    background: #222 !important;
+}
+
+body.dark .rutina_card h3 {
+    color: white !important;
 }
