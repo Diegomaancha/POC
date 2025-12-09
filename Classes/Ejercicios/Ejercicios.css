@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-   /* Fondo con un degradado blanco semitransparente encima de la imagen */
+    height: 100%;
+    /* La página ocupa toda la altura */
+}
+
+body {
+    /* Fondo con un degradado blanco semitransparente encima de la imagen */
     background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
         url('/Assets/Images/ManchaGymlogo.png');
 
@@ -17,6 +23,15 @@ body {
     /* La imagen cubre toda la pantalla */
     background-attachment: fixed;
     /* La imagen queda fija al hacer scroll */
+    display: flex;
+    /* Estructura vertical */
+    flex-direction: column;
+    /* Contenido arriba, footer abajo */
+}
+
+#footer-container {
+    margin-top: auto;
+    /* Empuja el footer hacia abajo SIEMPRE */
 }
 
 .navbar {
@@ -30,7 +45,7 @@ body {
     position: relative;
 }
 
-.ManchaGym{
+.ManchaGym {
     color: white;
     text-decoration: none;
 }
@@ -104,8 +119,10 @@ body {
 .ej_card img {
     width: 100%;
     height: 180px;
-    object-fit: contain; /* ahora se ven enteras */
-    background-color: #000; /* para que no quede hueco feo alrededor */
+    object-fit: contain;
+    /* ahora se ven enteras */
+    background-color: #000;
+    /* para que no quede hueco feo alrededor */
 }
 
 
@@ -120,13 +137,14 @@ body {
     line-height: 1.4;
 }
 
-h3{
+h3 {
     color: aliceblue;
 }
 
-p{
+p {
     color: aliceblue;
 }
+
 /* ===============================
    RESPONSIVE NAVBAR (MISMO QUE CARRUSEL)
    =============================== */
@@ -168,4 +186,3 @@ body.dark .rutina_card {
 body.dark .rutina_card h3 {
     color: white !important;
 }
-

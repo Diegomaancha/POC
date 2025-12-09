@@ -4,17 +4,30 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.85),
-        rgba(255, 255, 255, 0.85)
-    ),
-    url('/Assets/Images/ManchaGymlogo.png');
+    height: 100%;
+    /* La página ocupa toda la altura */
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)),
+        url('/Assets/Images/ManchaGymlogo.png');
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    /* Estructura vertical */
+    flex-direction: column;
+    /* Contenido arriba, footer abajo */
+}
+
+#footer-container {
+    margin-top: auto;
+    /* Empuja el footer hacia abajo SIEMPRE */
 }
 
 /* ======================
